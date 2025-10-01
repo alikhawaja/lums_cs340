@@ -26,14 +26,14 @@ END
 IF NOT EXISTS (
     SELECT * 
     FROM sys.database_files 
-    WHERE name = N'AdventureWorks2022_Data3'
+    WHERE name = N'AdventureWorks2022_Data4'
 )
 BEGIN
     PRINT 'File does not exist. Adding file to filegroup...';
     ALTER DATABASE AdventureWorks2022
     ADD FILE (
-        NAME = N'AdventureWorks2022_Data3',
-        FILENAME = N'/var/opt/mssql/data/AdventureWorks2022_Data3.ndf',
+        NAME = N'AdventureWorks2022_Data4',
+        FILENAME = N'/var/opt/mssql/data/AdventureWorks2022_Data4.ndf',
         SIZE = 25MB,
         MAXSIZE = 100MB,
         FILEGROWTH = 25MB
@@ -59,6 +59,7 @@ BEGIN
     PRINT 'Table cs340.NewAddress does not exist.';
 END
 -- Create a new table with a clustered index in the new file
+
 CREATE TABLE cs340.NewAddress (
     AddressID INT NOT NULL,
     AddressLine1 NVARCHAR(60) NOT NULL,
@@ -77,6 +78,7 @@ EXEC dbo.GetIndexStatsForTable 'cs340.NewAddress';
 EXEC dbo.InsertNewAddressData 1;
 EXEC dbo.GetIndexStatsForTable 'cs340.NewAddress';
 EXEC dbo.InsertNewAddressData 10001;
+EXEC dbo.InsertNewAddressData 20001;
 EXEC dbo.GetIndexStatsForTable 'cs340.NewAddress';
 TRUNCATE TABLE cs340.NewAddress;
 EXEC dbo.GetIndexStatsForTable 'cs340.NewAddress';
