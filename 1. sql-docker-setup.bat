@@ -1,0 +1,1 @@
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=pass@word1!@#$" -p 1433:1433 --name sqlsrv --hostname sqlsrv -v sqlsrvdata:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2022-latest
