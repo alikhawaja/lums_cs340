@@ -1,0 +1,22 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver2k22
+    ports:
+    - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "YourStrongPassword123"
+      MSSQL_DATA_DIR: "/var/opt/mssql/data"
+      MSSQL_LOG_DIR: "/var/opt/mssql/log"
+      MSSQL_AGENT_ENABLED: "true"
+      MSSQL_PID: "Developer"
+      shm_size: '2gb'
+      hostname: sqlserver2k22
+      tz: "GMT+3"
+    restart: unless-stopped
+    volumes:
+    - mssql_data:/var/opt/mssql
+
+volumes:
+  mssql_data:
