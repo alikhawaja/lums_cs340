@@ -25,6 +25,7 @@ CREATE FUNCTION GetNums(@n AS BIGINT) RETURNS TABLE AS RETURN
   SELECT TOP (@n) n FROM Nums ORDER BY n;
 GO
 
+select * from getnums(100)
 /* ------------------------------------------------------------
 -- Create example Partitioned Table (Heap)
 -- The Partition Column is a DATE column
@@ -60,7 +61,7 @@ CREATE TABLE Sales (
 -- Insert test data
 INSERT INTO Sales(SalesDate, Quantity)
 SELECT DATEADD(DAY,dates.n-1,'2021-01-01') AS SalesDate, qty.n AS Quantity
-FROM GetNums(DATEDIFF(DD,'2021-01-01','2026-01-01')) dates
+FROM GetNums(DATEDIFF(DD,'2020-01-01','2025-01-01')) dates
 CROSS JOIN GetNums(1000) AS qty;
 
 exec cs340.sp_ViewPartitionedTableInfo 'Sales';
