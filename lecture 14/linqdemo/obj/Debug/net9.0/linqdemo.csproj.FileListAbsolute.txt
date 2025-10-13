@@ -1,0 +1,15 @@
+D:\git\cs340\lecture 14\linqdemo\bin\Debug\net9.0\linqdemo.exe
+D:\git\cs340\lecture 14\linqdemo\bin\Debug\net9.0\linqdemo.deps.json
+D:\git\cs340\lecture 14\linqdemo\bin\Debug\net9.0\linqdemo.runtimeconfig.json
+D:\git\cs340\lecture 14\linqdemo\bin\Debug\net9.0\linqdemo.dll
+D:\git\cs340\lecture 14\linqdemo\bin\Debug\net9.0\linqdemo.pdb
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.AssemblyInfoInputs.cache
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.AssemblyInfo.cs
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.csproj.CoreCompileInputs.cache
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.sourcelink.json
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.dll
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\refint\linqdemo.dll
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.pdb
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\linqdemo.genruntimeconfig.cache
+D:\git\cs340\lecture 14\linqdemo\obj\Debug\net9.0\ref\linqdemo.dll
