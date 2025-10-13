@@ -13,14 +13,14 @@ INSERT SalesOrderHeader (
 	[PurchaseOrderNumber] ,
 	[AccountNumber] ,
 	[CustomerID] ,
-	[SalesPersonID] ,
+--	[SalesPersonID] ,
 	[TerritoryID] ,
 	[BillToAddressID] ,
 	[ShipToAddressID] ,
 	[ShipMethodID] ,
 	[CreditCardID] ,
 	[CreditCardApprovalCode] ,
-	[CurrencyRateID] ,
+	--[CurrencyRateID] ,
 	[SubTotal] ,
 	[TaxAmt] ,
 	[Freight],
@@ -38,14 +38,14 @@ SELECT
 	[PurchaseOrderNumber] ,
 	[AccountNumber] ,
 	[CustomerID] ,
-	[SalesPersonID] ,
-	[TerritoryID] ,
+	--[SalesPersonID] ,
+	[BillToAddressID], --[TerritoryID] ,
 	[BillToAddressID] ,
 	[ShipToAddressID] ,
-	[ShipMethodID] ,
-	[CreditCardID] ,
+	[ShipToAddressID] , --[ShipMethod] ,
 	[CreditCardApprovalCode] ,
-	[CurrencyRateID] ,
+	[CreditCardApprovalCode] ,
+	--[CurrencyRateID] ,
 	[SubTotal] ,
 	[TaxAmt] ,
 	[Freight],
@@ -53,7 +53,7 @@ SELECT
 	[rowguid],	
 	[ModifiedDate] 
 FROM
-	AdventureWorksPTO.Sales.SalesOrderHeader
+	AdventureWorksLT2022.SalesLT.SalesOrderHeader
 -------------------------------------------------------------------------------------------------------------
 ----------------------Checkign rows in each partition for all Indexes---------------------------
 ---OTHER than Partition 1 (future data storage) all other has >0 rows

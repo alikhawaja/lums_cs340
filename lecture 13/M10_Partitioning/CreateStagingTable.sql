@@ -14,7 +14,7 @@ CREATE TABLE [SalesOrderHeaderStg](
 	[DueDate] [datetime] NOT NULL,
 	[ShipDate] [datetime] NULL,
 	[Status] [tinyint] NOT NULL,
-	[OnlineOrderFlag] FLAG NOT NULL,
+	[OnlineOrderFlag] dbo.FLAG NOT NULL,
 	[PurchaseOrderNumber] [dbo].[OrderNumber] NULL,
 	[AccountNumber] [dbo].[AccountNumber] NULL,
 	[CustomerID] [int] NOT NULL,

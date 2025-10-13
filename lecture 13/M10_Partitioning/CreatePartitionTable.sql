@@ -24,7 +24,7 @@ TO (
 GO 
 
 
------creating table using patition function and schema----
+-----creating table using partition function and schema----
 -----------------------------------------------------------------------------------------------------------------------
 -------------------------------Data Custom Data type used to create Table ------------------------------
 -----------------------------------------------------------------------------------------------------------------------
@@ -34,13 +34,10 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-/****** Object:  UserDefinedDataType [dbo].[AccountNumber]    Script Date: 5/9/2018 9:42:31 PM ******/
 CREATE TYPE [AccountNumber] FROM [nvarchar](15) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[Flag]    Script Date: 5/9/2018 9:42:42 PM ******/
 CREATE TYPE [Flag] FROM [bit] NOT NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[OrderNumber]    Script Date: 5/9/2018 9:42:55 PM ******/
 CREATE TYPE [OrderNumber] FROM [nvarchar](25) NULL
 GO
 ----------------------------------------------------------------------------------------------------

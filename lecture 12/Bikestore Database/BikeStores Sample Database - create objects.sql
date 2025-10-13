@@ -7,12 +7,25 @@ Link   : http://www.sqlservertutorial.net/load-sample-database/
 Version: 1.0
 --------------------------------------------------------------------
 */
+if exists (select * from sys.databases where name = 'BikeStores')
+begin
+/*
+--------------------------------------------------------------------
+© 2017 sqlservertutorial.net All Rights Reserved
+--------------------------------------------------------------------
+Name   : BikeStores
+Link   : http://www.sqlservertutorial.net/load-sample-database/
+Version: 1.0
+--------------------------------------------------------------------
+*/
+Use BikeStores;
+
 -- create schemas
 CREATE SCHEMA production;
-go
+GO
 
 CREATE SCHEMA sales;
-go
+GO
 
 -- create tables
 CREATE TABLE production.categories (
