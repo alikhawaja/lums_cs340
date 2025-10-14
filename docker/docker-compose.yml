@@ -13,10 +13,18 @@ services:
       MSSQL_PID: "Developer"
       shm_size: '2gb'
       hostname: sqlserver2k22
-      tz: "GMT+3"
+      tz: "GMT+5"
     restart: unless-stopped
     volumes:
     - mssql_data:/var/opt/mssql
-
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: 16G
+        reservations:
+          cpus: '4'
+          memory: 16G
+          
 volumes:
   mssql_data:
