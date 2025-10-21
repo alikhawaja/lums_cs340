@@ -36,6 +36,6 @@ public class SqlBloggingContext : DbContext
     public string? DbPath { get; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlServer("Data Source=localhost;Initial Catalog=Blogging;User ID=sa;Password=YourStrongPassword123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True");
+        => options.UseSqlServer("Data Source=localhost;Initial Catalog=Blogging2;User ID=sa;Password=YourStrongPassword123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True");
 }
 
