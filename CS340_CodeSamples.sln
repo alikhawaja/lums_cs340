@@ -4,9 +4,9 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linqdemo", "lecture14\linqdemo\linqdemo.csproj", "{677CAF10-9088-2222-FD18-491BEBB65930}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFGetStarted", "Lecture15\EFGetStarted\EFGetStarted.csproj", "{A28B3834-A5E6-815C-1550-9FD984878F53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFGetStarted", "lecture15_16\EFGetStarted\EFGetStarted.csproj", "{A28B3834-A5E6-815C-1550-9FD984878F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFScaffolding", "Lecture15\EFScaffolding\EFScaffolding.csproj", "{2037BE3D-FBF1-4444-86D7-605F499E2006}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFScaffolding", "lecture15_16\EFScaffolding\EFScaffolding.csproj", "{2037BE3D-FBF1-4444-86D7-605F499E2006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
