@@ -1,9 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "lums_cs340",
 			"path": "."
 		},
 		{
+			"name": "project_outline",
 			"path": "project_outline"
 		}
 	],
